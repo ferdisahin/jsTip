@@ -20,7 +20,7 @@
 			href="https://fonts.gstatic.com"
 			crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;800;900&display=swap"
 			rel="stylesheet" />
 
 		<style>
@@ -30,7 +30,37 @@
 		</style>
 	</head>
 	<body
-		class="h-screen flex items-center justify-center text-sm bg-gray-50 px-20 sm:px-5">
+		class="h-screen flex flex-col items-center justify-center text-sm bg-gray-50 px-20 sm:px-5">
+		<div class="text-6xl font-black mb-5">jsTip</div>
+
+		<div class="w-96 mb-5 text-center gap-2 flex justify-center">
+			<a
+				class="github-button"
+				href="https://github.com/ferdisahin/jsTip/archive/HEAD.zip"
+				data-size="large"
+				aria-label="Download ferdisahin/jsTip on GitHub"
+				>Download</a
+			>
+
+			<a
+				class="github-button"
+				href="https://github.com/ferdisahin/jsTip"
+				data-size="large"
+				data-show-count="true"
+				aria-label="Star ferdisahin/jsTip on GitHub"
+				>Star</a
+			>
+
+			<a
+				class="github-button"
+				href="https://github.com/ferdisahin/jsTip/fork"
+				data-size="large"
+				data-show-count="true"
+				aria-label="Fork ferdisahin/jsTip on GitHub"
+				>Fork</a
+			>
+		</div>
+
 		<div
 			class="grid sm:grid-cols-2 md:grid-cols-3 gap-1 sm:gap-2 w-96 [&>*]:p-2 [&>*]:text-center [&>*]:text-gray-700 [&>*]:bg-sky-200 [&>*:hover]:bg-sky-600 [&>*:hover]:text-white [&>*]:transition-all">
 			<div
@@ -91,6 +121,11 @@
 			</div>
 		</div>
 
+		<!-- Place this tag in your head or just before your close body tag. -->
+		<script
+			async
+			defer
+			src="https://buttons.github.io/buttons.js"></script>
 		<script src="../dist/jstip.js"></script>
 		<script>
 			jsTip("[data-tooltip]");
