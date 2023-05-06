@@ -18,8 +18,8 @@ After completing this step, you can use the tooltip on any element you want.
 ```
 data-tooltip = "The text you write here will appear in the tooltip."
 data-tooltip-position = "top, top start, top end, left, left start, left end, right, right start, right end, bottom, bottom start, bottom end" // You can use any of these values.
-data-tooltip-background-color = "You can enter the background color here. The default is black."
-data-tooltip-text-color = "You can enter the text color here. The default is white."
+data-tooltip-background-color = "You can enter the background color here. Default is black."
+data-tooltip-text-color = "You can enter the text color here. Default is white."
 ```
 
 You can check out the demo for more examples.
