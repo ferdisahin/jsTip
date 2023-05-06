@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>jsTip</title>
+
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+			rel="stylesheet" />
+
+		<style>
+			body {
+				font-family: "Roboto", sans-serif;
+			}
+		</style>
+	</head>
+	<body
+		class="h-screen flex items-center justify-center text-sm bg-gray-50 px-20 sm:px-5">
+		<div
+			class="grid sm:grid-cols-2 md:grid-cols-3 gap-1 sm:gap-2 w-96 [&>*]:p-2 [&>*]:text-center [&>*]:text-gray-700 [&>*]:bg-sky-200 [&>*:hover]:bg-sky-600 [&>*:hover]:text-white [&>*]:transition-all">
+			<div
+				data-tooltip="Example Text"
+				data-tooltip-position="top start">
+				Top Start
+			</div>
+			<div data-tooltip="Example Text with emoji 😄">Top</div>
+			<div
+				data-tooltip="Example Text"
+				data-tooltip-position="top end">
+				Top End
+			</div>
+			<div
+				data-tooltip="Example Text"
+				data-tooltip-position="left start">
+				Left Start
+			</div>
+			<div
+				data-tooltip="Example Text"
+				data-tooltip-position="left">
+				Left
+			</div>
+			<div
+				data-tooltip="Example Text"
+				data-tooltip-position="left end">
+				Left End
+			</div>
+			<div
+				data-tooltip="Example Text"
+				data-tooltip-position="right start">
+				Right Start
+			</div>
+			<div
+				data-tooltip="Example Text"
+				data-tooltip-position="right">
+				Right
+			</div>
+			<div
+				data-tooltip="Example Text"
+				data-tooltip-position="right end">
+				Right End
+			</div>
+			<div
+				data-tooltip="Example Text"
+				data-tooltip-position="bottom start">
+				Bottom Start
+			</div>
+			<div
+				data-tooltip="Example Text"
+				data-tooltip-position="bottom">
+				Bottom
+			</div>
+			<div
+				data-tooltip="Example Text"
+				data-tooltip-position="bottom end">
+				Bottom End
+			</div>
+		</div>
+
+		<script src="../dist/jstip.js"></script>
+		<script>
+			jsTip("[data-tooltip]");
+		</script>
+	</body>
+</html>
